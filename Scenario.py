@@ -10,7 +10,6 @@ ACCESS_TOKEN = "4be83e75f9856a4f4c573bd17d45b2529b0ba052"
 tester = Tester('250020001047343438323536')
 spannerpi = Spannerpi()
 ifttt = Ifttt()
-
 # D5 -> green led
 # D1 -> blue led
 # D3 -> button
