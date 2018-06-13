@@ -11,7 +11,6 @@ tester = Tester('250020001047343438323536')
 spannerpi = Spannerpi()
 ifttt = Ifttt()
 
-
 # D5 -> green led
 # D1 -> blue led
 # D3 -> button
