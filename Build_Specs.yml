@@ -1,0 +1,40 @@
+# --------------------------------------------------------------------
+# Build_Specs.yml will be used during the build operation. 
+# It's the reference configuration file of the source code. 
+# Edit this file choosing your option and push your bundle.
+$ Some details bout parameters:
+# platform : photon
+# srcRef   : link/path to your source code 
+# repo     : public/private
+# command  : (empty)/some commands/script
+# --------------------------------------------------------------------
+
+
+# --------------------------------------------------------------------
+# Option 1
+# This option defines the relative path where your source code exists
+# --------------------------------------------------------------------
+
+platform: photon
+srcRef: example_app
+command: make PLATFORM=photon APP=example_app
+
+# --------------------------------------------------------------------
+# Option 2
+# This option defines public repository where your source code exists
+# --------------------------------------------------------------------
+
+#platform: photon
+#srcRef: https://github.com/demo_user/testrepo.git
+#repo: public
+#command:
+
+# --------------------------------------------------------------------
+# Option 3
+# This option defines private repository where your source code exists
+# --------------------------------------------------------------------
+
+#platform: photon
+#srcRef: git@bitbucket.org:demo_user/testrepo.git
+#repo: private
+#command:
