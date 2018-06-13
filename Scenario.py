@@ -10,7 +10,6 @@ ACCESS_TOKEN = "4be83e75f9856a4f4c573bd17d45b2529b0ba052"
 tester = Tester('250020001047343438323536')
 spannerpi = Spannerpi()
 ifttt = Ifttt()
-
 # D5 -> green led
 # D1 -> blue led
 # D3 -> button
@@ -107,8 +106,8 @@ if __name__ == "__main__":
 
     EXEC_TEST_CASE(C1_validate_ifttt_buttonOn())
 
-    print("Welcome nick!")
+
 
     time.sleep(2)
-
+    print("Welcome nick!")
     EXEC_TEST_CASE(C2_validate_ifttt_buttonOff())
