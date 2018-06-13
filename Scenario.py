@@ -107,8 +107,8 @@ if __name__ == "__main__":
 
     EXEC_TEST_CASE(C1_validate_ifttt_buttonOn())
 
-    print("Welcome nick!")
+
 
     time.sleep(2)
-
+    print("Welcome nick!")
     EXEC_TEST_CASE(C2_validate_ifttt_buttonOff())
