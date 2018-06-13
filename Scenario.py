@@ -107,7 +107,7 @@ if __name__ == "__main__":
 
     EXEC_TEST_CASE(C1_validate_ifttt_buttonOn())
 
-    print("Welcome nick!")
+    print("This commit is on TestBranch!")
 
     time.sleep(2)
 
