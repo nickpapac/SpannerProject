@@ -4,7 +4,7 @@ from Spannerpi import Spannerpi
 from Ifttt import Ifttt
 import time
 import json
-BINARY_FROM = "DESPLOY"
+BINARY_FROM = "SPANNER"
 DEVICE_ID = "250020001047343438323536"
 ACCESS_TOKEN = "4be83e75f9856a4f4c573bd17d45b2529b0ba052"
 tester = Tester('250020001047343438323536')
