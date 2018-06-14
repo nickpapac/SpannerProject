@@ -4,16 +4,17 @@ from Spannerpi import Spannerpi
 from Ifttt import Ifttt
 import time
 import json
-BINARY_FROM = "SPANNER"
+BINARY_FROM = "DESPLOY"
 DEVICE_ID = "250020001047343438323536"
 ACCESS_TOKEN = "4be83e75f9856a4f4c573bd17d45b2529b0ba052"
+
 tester = Tester('250020001047343438323536')
 spannerpi = Spannerpi()
 ifttt = Ifttt()
+
 # D5 -> green led
 # D1 -> blue led
 # D3 -> button
-
 # Basic Functionality
 def B1_validate_button_press():
     # button press
@@ -104,7 +105,28 @@ def C2_validate_ifttt_buttonOff():
 
 if __name__ == "__main__":
 
-    EXEC_TEST_CASE(C1_validate_ifttt_buttonOn())
+    EXEC_TEST_CASE(N1_validate_wifi_connect())
+
     time.sleep(2)
-    print("Welcome nick!")
+
+    EXEC_TEST_CASE(N2_validate_wifi_disconnect())
+
+    time.sleep(2)
+
+    EXEC_TEST_CASE(N3_validate_wifi_reconnect())
+
+    time.sleep(4)
+
+    EXEC_TEST_CASE(B1_validate_button_press())
+
+    time.sleep(2)
+
+    EXEC_TEST_CASE(C2_validate_ifttt_buttonOff())
+
+    time.sleep(2)
+
+    EXEC_TEST_CASE(C1_validate_ifttt_buttonOn())
+
+    time.sleep(2)
+
     EXEC_TEST_CASE(C2_validate_ifttt_buttonOff())
